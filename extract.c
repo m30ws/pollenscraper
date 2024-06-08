@@ -1,3 +1,6 @@
+/*
+	TODO: improve options for exporting/saving data
+*/
 #include <string.h>
 #include <stdio.h>
 #include <stdlib.h>
@@ -12,7 +15,9 @@
 	#define JSON_DATA_VER "1.0"
 #endif
 
-#define DBG 1
+#ifndef DBG
+#define DBG 0
+#endif
 #define DEBUG(x) if (DBG) { x; }
 
 #define IS_BLANK(c) ((c)==' ' || (c)=='\n' || (c)=='\r' || (c)=='\t')
