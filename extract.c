@@ -200,10 +200,10 @@ int main(int argc, char* argv[])
 			if (json_fp)
 				fprintf(json_fp, "%s\t\t\"%s\": %2.1f", (n_found>0) ? ",\n" : "", kat_ptr, val);
 #endif
-
-			free(kat_name);
 			n_found++;
 		}
+
+		free(kat_name);
 
 	// Inc to next find range
 		while (*contents_ptr != '<')
